@@ -1,0 +1,16 @@
+{
+  "name": "unfurl",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "deploy": "gcloud functions deploy unfurl  --trigger-http --runtime nodejs10 --memory 1GB --region europe-west1 --env-vars-file env-vars.yaml"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "node-fetch": "^2.6.1",
+    "puppeteer": "^8.0.0"
+  }
+}
